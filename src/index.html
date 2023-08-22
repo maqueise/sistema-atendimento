@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Desenvolvimento Web Dinâmico - Sistema de Atendimento</title>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand text-light" href="/"
+                    >Sistema de Atendimento</a
+                >
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle text-light"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                Menu
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="#"
+                                        >Menu Item</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#"
+                                        >Menu Item</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main class="container mt-4">
+            <section class="row">
+                <div class="col-8">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="card-title">Cadastrar Antendimento</h5>
+                        </div>
+                        <section class="card-body">
+                            <div class="input-group gap-1">
+                                <input id="input-nome" class="form-control" placeholder="Nome">
+                                <select id="select-prioridade" class="form-select">
+                                    <option value="N">Normal</option>
+                                    <option value="P">Prioritário</option>
+                                </select>
+                                <button id="btn-incluir" class="btn btn-primary">Incluir</button>
+                            </div>
+                        </section>
+                    </div>
+                    <!--card-->
+                    <hr>
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="card-title">Atendimentos</h5>
+                        </div>
+                        <ul id="ul-lista" class="list-group list-group-flush">
+                            <li class="list-group-item">Fulano de Tal</li>
+                            <li class="list-group-item">Fulanita</li>
+                          </ul>
+                    </div>
+                    <!--card-->
+                </div>
+                <!--col-->
+                <div class="col-4">
+                    <div class="card text-bg-success">
+                        <article class="card-header text-center">
+                            <h5 class="card-title">Em Atendimento</h5>
+                        </article>
+                        <section class="card-body">
+                            <p id="display-nome" class="card-text display-6 text-center">Fulano de Tal</p>
+                        </section>
+                        <footer class="card-footer">
+                            <p class="card-text text-center">
+                            </p>
+                        </footer>
+                    </div>
+                    <!--card-->
+                    <hr>
+                    <div class="d-grid gap-2">
+                        <button id="btn-chamar" class="btn btn-primary btn-lg p-4" type="button">Chamar</button>
+                      </div>
+                </div>
+                <!--col-->
+            </section>
+            <!--row-->
+        </main>
+        <script type="module" src="./js/index.js"></script>
+    </body>
+</html>
